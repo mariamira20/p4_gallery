@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales Felinos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+         :root{
+            --marron_oscuro:#501802;
+            --marron_claro: #7c360b;
+            --naranja_oscuro: #b45f17;
+            --naranja_claro: #f89b21;
+            --amarillo: #ffe240;
+            --titulo:'IM Fell English SC', serif;
+            --tipo2:'Quicksand', sans-serif;
+        }
+        html{
+            font-size: 32px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        ul li{
+            list-style-type: none;
+        }
+       
+        img{
+            width: 100%;
+            height: auto;
+        }
+        body>header{
+            background-color: var(--amarillo);
+            text-align: center;
+        }
+        
+        .container{
+            padding: 0 3em;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        body>header .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: var(--m_clar);
+            height: 100vh;
+        }
+        #felinos .container{
+            display: flex;
+            flex-wrap: wrap;
+        }           
+        #felinos .container{ 
+            width: 100%;
+        }
+
+        section:first-child .container{
+            display: flex;
+            flex-direction: row;
+            background-color: var(--m_clar);
+            height: 100%;
+        }
+        
+        .cover header{
+            background-color: var(--amarillo);
+        }
+        section{
+            height: 100%;
+        }
+        footer{
+            height: 50vh;
+        }
+        #Felinos{
+            background-color: var(--naranja_claro);
+        }
+        #Zoologicos{
+            background-color: var(--naranja_oscuro);
+        }
+        #Webs{
+            background-color: var(--marron_claro);
+        }
+        h1{
+            font-size: 3em;
+            font-family: 'IM Fell English SC', serif;
+            font-weight: 900;
+            color: var(--marron_oscuro);
+        }
+        h2{ 
+           font-size: 1em;
+           font-family: 'Quicksand', sans-serif;
+           font-weight: 400;
+           color: var(--naranja_oscuro);
+           margin-bottom: 1em;
+        }
+        nav a{
+            font-size: 0.8em;
+            margin-bottom: 0.5em;
+        }
+        h3{
+            font-family:'Quicksand', sans-serif; 
+            margin-left: 2em;
+        }
+        .cover{
+            padding: 1.2em;
+            margin: 0.5em;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 200px;
+            width: 200px;
+            max-height: 450px;
+            flex-grow: 1;
+            background-color: var(--amarillo);
+        }
+        .cover header h4{
+            font-family:var(--tipo2) ;
+            font-size: 0,5em;
+            color: var(--marron_oscuro);
+        }
+        .cover header{
+            width: 100%;
+            display: flex;
+            align-items: center;            
+        }
+        .cover_img{
+            width: 100%;
+            height: 150px;
+            display: flex;      
+        }
+        .cover_img img{
+            object-fit: cover;
+
+
+
+            /* height: 100%; */
+        }
+        /* @media (max-width:550px){
+            body{
+                font-size: 15px;
+            }
+        } */
+        section .container{
+            display: flex;
+        }
+        .zoo{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 450px;
+            margin: 1em;
+            align-items: center;
+        }
+        .zoo_img{
+            width: 200px;
+            height: 200px;
+        }
+        .zoo blockquote{
+            text-align: center;
+            font-size: 0.5em;
+            margin-top: 1em;
+        }
+        .zoo h4{
+            text-align: center;
+            font-size: 1em;
+            margin-top: 0.5em;
+        }
+        .zoo_img img{
+            border-radius: 200px;
+            object-fit: cover;
+            height: 100%;
+        }
+        footer p{
+            width: 16%;
+            margin-left: 3.5em;
+            font-size: 0.7em;
+        }
+    
+    </style>
+</head> 
+<body>
+    <header>
+        <h1>Animales felinos</h1>
+        <h2>"Diferentes animales felinos que podemos ver en zoológicos españoles"</h2>
+        <nav>
+            <a href="#Felinos">Felinos</a>
+            <a href="#Zoologicos">Zoológicos</a>
+            <a href="#Webs">Webs</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Felinos"> 
+            <h3>Felinos</h3>
+            <div class="container"> 
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/leon.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>León</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/leopardo.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Leopardo</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/pantera.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Pantera</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/jaguar.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Jaguar</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/linze.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Lince</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/tigre.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Tigre</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/puma.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Puma</h4>
+                    </header>
+                </div>
+                <div class="cover">
+                    <div class="cover_img">
+                        <img src="img/leon_blanco.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>León Blanco</h4>
+                    </header>
+                </div>
+               
+            </div>
+        </section>
+        
+        
+        <section id="Zoologicos">
+            <h3>Zoológicos</h3>
+            <div class="container">
+                <div class="zoo">
+                    <div class="zoo_img">
+                        <img src="img/bioparc.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Bioparc</h4>
+                        <blockquote>
+                            Un parque zoológico español situado en la costa mediterránea, en la ciudad de Valencia. Especializado en la fauna africana, está dividido en cuatro zonas representando cuatro biomas : sabana seca, sabana húmeda, bosques del África ecuatorial y Madagascar.
+                        </blockquote>
+                    </header>
+                </div>
+                <div class="zoo">
+                    <div class="zoo_img">
+                        <img src="img/castellar.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Castellar</h4>
+                        <blockquote>
+                            Castellar de la Frontera, Cádiz. Santuario animal, clínica veterinaria y centro de rescate de tigres, leones y serpientes, con experiencias interactivas.
+                        </blockquote>
+                    </header>
+                </div>
+                <div class="zoo">
+                    <div class="zoo_img">
+                        <img src="img/faunia.jpg" alt="">
+                    </div>
+                    <header>
+                        <h4>Faunia</h4>
+                        <blockquote>
+                        Un jardín botánico y parque zoológico, de unas 14 hectáreas de extensión ubicado en Madrid (España). Está organizado en áreas que representan diferentes ecosistemas como la jungla, los polos o bosque africano.
+                        </blockquote>
+                    </header>
+                </div>
+            </div>
+
+    </section>
+    
+</main>
+<footer id="Webs">
+    <h3>Webs</h3>
+    <p><a href="#">Twiter</a></p>
+    <p><a href="#">Instagram</a></p>
+    <p><a href="#">Facebook</a></p>
+    <p><a href="#">Email</a></p>
+
+</footer>
+</body>
+</html>
